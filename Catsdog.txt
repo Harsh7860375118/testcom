@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+class Cnd
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner (System.in);
+        int t=sc.nextInt();
+        while(t-->0){
+            long c=sc.nextLong();
+            long d=sc.nextLong();
+            long l=sc.nextLong();
+            long x=(c+d)*4;
+            long y=d*4;
+            if(l%4==0 && l>=y && l<=x){
+                if(c>2*d){
+                    long a=c-2*d;
+                    long b=(a+d)*4;
+                    if(l>=b && l<=x){
+                        System.out.println("yes");
+                    }
+                    else{
+                        System.out.println("no");
+                    }
+                }
+                else{
+                    System.out.println("yes");
+                }
+            }
+            else{
+                System.out.println("no");
+            }
+        }
+    }
+}
