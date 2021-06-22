@@ -1,0 +1,35 @@
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+class Gsalary
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc = new Scanner(System.in);
+		int t = sc.nextInt();
+		while(t-->0)
+		{
+		    double base,HRA,DA,gross;
+		    base = sc.nextDouble();
+		    if(base >= 1500)
+		    {
+		        HRA = 500;
+		        DA = base * 0.98;
+		        gross = base + HRA + DA;
+		        System.out.printf("%.2f\n",gross);
+		    }
+		    else
+		    {
+		        HRA = base * 0.10;
+		        DA = base * 0.90;
+		        gross = base + HRA + DA;
+		        System.out.printf("%.2f\n",gross);
+		     }
+		    
+		    
+		}
+	}
+}
