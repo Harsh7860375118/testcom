@@ -1,0 +1,28 @@
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+class Twonumbers
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		// your code goes here
+		Scanner sc=new Scanner(System.in);
+		int t=sc.nextInt();
+		while(t>0)
+		{
+		    long A=sc.nextLong();
+		    long B=sc.nextLong();
+		    long N=sc.nextLong();
+		    
+		    if(N%2==1)
+		    {
+		      A=A*2;
+		    }
+		  
+		    long c=Math.max(A,B)/Math.min(A,B);
+		    System.out.println(c);
+		    t--;
+		}
+	}
+}
